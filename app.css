@@ -78,7 +78,10 @@ table {
       background: none; }
     .header .navigation .logo:hover {
       color: #8e271b; }
-    .header .navigation .menu {
-      display: none; }
+
+/* Portfolio */
+#portfolio {
+  height: calc(100vh - 38px);
+  background: black; }
 
 /*# sourceMappingURL=app.css.map */
