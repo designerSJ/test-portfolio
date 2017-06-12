@@ -75,6 +75,7 @@ table {
 /* line 11, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
 .nav .logo i:hover {
   color: #e74c3c;
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -119,6 +120,7 @@ table {
 /* line 46, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
 .nav .main-nav .menu a:hover {
   background: white;
+  -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 
@@ -150,7 +152,8 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /* line 13, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
@@ -161,7 +164,8 @@ table {
 /* line 15, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
 #header .header-section .profile img {
   border-radius: 50%;
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.55);
+          box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.55);
 }
 
 /* line 20, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
@@ -237,15 +241,21 @@ table {
 /* line 18, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
 #portfolio .image-container {
   margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* line 24, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
 #portfolio .image-container .item {
   max-width: 360px;
   height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
@@ -279,9 +289,13 @@ table {
 
 /* line 17, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
 #about .about-content {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 20px auto;
   max-width: 600px;
   padding-bottom: 80px;
@@ -302,8 +316,7 @@ table {
 @media (max-width: 600px) {
   /* line 37, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
   .about-content {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
-
-/*# sourceMappingURL=../css/app.map */
