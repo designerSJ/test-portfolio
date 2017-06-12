@@ -248,9 +248,10 @@ table {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-width: 1260px;
 }
 
-/* line 24, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+/* line 25, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
 #portfolio .image-container .item {
   max-width: 360px;
   height: 260px;
@@ -260,9 +261,21 @@ table {
   margin-bottom: 20px;
 }
 
-/* line 30, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+/* line 31, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
 #portfolio .image-container .item img {
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  /* line 36, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+  .image-container .item {
+    width: 260px;
+    max-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
 }
 
 /* line 1, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
