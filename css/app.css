@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+/* line 5, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 33, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, C:/Users/Shubham/Desktop/portfolio/sass/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav {
+  background: #2c3e50;
+  position: relative;
+  z-index: 1000;
+}
+
+/* line 7, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .logo i {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* line 11, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .logo i:hover {
+  color: #e74c3c;
+  transition: color 0.3s;
+}
+
+/* line 18, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .hamburger-nav::after {
+  font-family: fontawesome;
+  content: "\f0c9";
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 28, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  top: 64%;
+  padding-left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 36, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu a {
+  display: block;
+  background: #e74c3c;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 0.5px solid rgba(200, 200, 200, 0.2);
+}
+
+/* line 43, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu a:first-child {
+  margin-top: 16px;
+}
+
+/* line 46, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu a:hover {
+  background: white;
+  transition: background 0.3s ease;
+}
+
+/* line 49, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu a:hover li {
+  color: #c0392b;
+}
+
+/* line 52, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
+.nav .main-nav .menu a li {
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* Portfolio */
+/* line 3, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header {
+  height: 100vh;
+  background: #c0392b;
+  position: relative;
+}
+
+/* line 7, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 13, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section .profile {
+  text-align: center;
+}
+
+/* line 15, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section .profile img {
+  border-radius: 50%;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.55);
+}
+
+/* line 20, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section .heading-1 {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+/* line 31, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section .heading-2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* line 43, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+#header .header-section .star-line {
+  color: white;
+  max-width: 20rem;
+}
+
+@media (max-width: 600px) {
+  /* line 58, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+  #header .header-section .heading-2 {
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 2.7vw;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 66, C:/Users/Shubham/Desktop/portfolio/sass/_header.sass */
+  #header .header-section .heading-1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* PORTFOLIO */
+/* line 3, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio {
+  margin-bottom: 50px;
+}
+
+/* line 7, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio .main-head {
+  text-transform: uppercase;
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 16, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio .main-head hr {
+  max-width: 50px;
+}
+
+/* line 18, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio .image-container {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 24, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio .image-container .item {
+  max-width: 360px;
+  height: 260px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* line 30, C:/Users/Shubham/Desktop/portfolio/sass/_portfolio.sass */
+#portfolio .image-container .item img {
+  width: 100%;
+}
+
+/* line 1, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+#about {
+  background: #c0392b;
+  margin-bottom: 50px;
+}
+
+/* line 5, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+#about .main-about {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* line 14, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+#about .main-about hr {
+  max-width: 50px;
+}
+
+/* line 17, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+#about .about-content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 600px;
+  padding-bottom: 80px;
+}
+
+/* line 26, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+#about .about-content .content {
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  /* line 37, C:/Users/Shubham/Desktop/portfolio/sass/_about.sass */
+  .about-content {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=../css/app.map */
