@@ -92,7 +92,7 @@ table {
 
 /* line 28, C:/Users/Shubham/Desktop/portfolio/sass/_navigation.sass */
 .nav .main-nav .menu {
-  display: inline-block;
+  display: none;
   list-style: none;
   position: absolute;
   top: 64%;
