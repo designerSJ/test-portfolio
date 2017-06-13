@@ -333,3 +333,98 @@ table {
         flex-wrap: wrap;
   }
 }
+
+/* line 2, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+.main-head {
+  text-transform: uppercase;
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 11, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+.main-head hr {
+  max-width: 50px;
+}
+
+/* line 14, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 18, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form .form-item {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  padding: 25px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid rgba(230, 230, 230, 0.2);
+  border-bottom: 2px solid rgba(230, 230, 230, 0.2);
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  -webkit-box-shadow: 0 5px 5px 20px rgba(230, 230, 230, 0.2);
+          box-shadow: 0 5px 5px 20px rgba(230, 230, 230, 0.2);
+}
+
+/* line 31, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form .form-item::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #ccc;
+}
+#contact-form .form-item::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #ccc;
+}
+#contact-form .form-item:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #ccc;
+}
+#contact-form .form-item::placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #ccc;
+}
+
+/* line 35, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form textarea {
+  resize: vertical;
+}
+
+/* line 37, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form .btn {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  background: #e74c3c;
+  color: white;
+  padding: 10px 3px 10px 3px;
+  width: 100px;
+  margin: 10px 0 40px 4px;
+  border-radius: 5%;
+  -webkit-box-shadow: 0px 10px 8px -8px #333;
+          box-shadow: 0px 10px 8px -8px #333;
+  cursor: pointer;
+}
+
+/* line 48, C:/Users/Shubham/Desktop/portfolio/sass/_contact.sass */
+#contact-form .btn:hover {
+  -webkit-box-shadow: inset 0px 5px 80px #89281e;
+          box-shadow: inset 0px 5px 80px #89281e;
+}
